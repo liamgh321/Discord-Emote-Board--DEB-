@@ -110,7 +110,6 @@ namespace DiscordEmoji
                                                               // 6 is the desired spacing between each button, in this case we are treating
                                                               // the space each button takes up as the width of the button plus the width of the
                                                               // space to the right of the button
-                                                              //Console.WriteLine(maxRowBtn); //DEBUG
 
                 numRows = (double)(imageCount / maxRowBtn); // determines the number of rows needed based off of the # of btns that can fit per row.
                 numRows = Math.Ceiling(numRows); // Then that number is rounded up to the nearest integer to ensure there is a row for the last < maxRowBtn row of btns.
@@ -151,7 +150,7 @@ namespace DiscordEmoji
                             imageIndex++;
                         }
                     }
-                    else //this if statement holds the for loop to fill the final row of a section.
+                    else //this else statement holds the for loop to fill the final row of a section.
                     {
                         double stopper = imageCount - imageIndex; //this is how the for loop for the final row knows when to stop.
                         for (int k = 0; k < stopper; k++)
@@ -183,7 +182,6 @@ namespace DiscordEmoji
 
                 yPos = yPos + sectionHeight + label.Height;
 
-                Console.WriteLine("--------HERE-------- imagePaths.length: " + imagePaths.Length); // DEBUG
                 sectionIndex++; // Increases the sectionIndex so it'll point to the next section in masterList when making the buttons for said section in the next loop
             }
         }
