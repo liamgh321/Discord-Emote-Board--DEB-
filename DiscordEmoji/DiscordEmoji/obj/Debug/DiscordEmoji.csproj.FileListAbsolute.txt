@@ -1,0 +1,30 @@
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csprojAssemblyReference.cache
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.Form1.resources
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.Properties.Resources.resources
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csproj.GenerateResource.cache
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csproj.CoreCompileInputs.cache
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.exe.config
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.exe
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.pdb
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.exe
+C:\Users\liamg\iCloudDrive\1. Files\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.pdb
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.exe.config
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.exe
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.pdb
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csprojAssemblyReference.cache
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.Form1.resources
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.Properties.Resources.resources
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csproj.GenerateResource.cache
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csproj.CoreCompileInputs.cache
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.exe
+C:\Users\liamg\Dropbox\Visual Studio Projects\2021\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.pdb
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.exe.config
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.exe
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\bin\Debug\DiscordEmoji.pdb
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csprojAssemblyReference.cache
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.Form1.resources
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.Properties.Resources.resources
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csproj.GenerateResource.cache
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.csproj.CoreCompileInputs.cache
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.exe
+C:\Users\liamg\Documents\GitHub\Discord-Emoji-Board--DEB-\DiscordEmoji\DiscordEmoji\obj\Debug\DiscordEmoji.pdb
