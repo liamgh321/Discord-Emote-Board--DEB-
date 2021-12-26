@@ -47,6 +47,8 @@ namespace DiscordEmoji
 
         private void Populate()
         {
+            List<List<string>> masterList = new List<List<string>>(); // Master list for all the file paths, sublists are added to it (in order created) 
+                                                                      // dynamically based on the sections being added.
             int xPos = 20; // initial xpos for section label creation
             int yPos = 50; // initial ypos for section label creation
             int xPosBtn; // will hold the xPos value for the button being created
@@ -57,7 +59,7 @@ namespace DiscordEmoji
             int btnHeight = 75;
             int maxRowBtn; // will hold value for the maximum # of buttons per row
             int sectionHeight; // Will hold the value that determines the height of the section between each label.
-            int imageIndex; // used to point to the right image to make a button for
+            int imageIndex, sectionIndex; // used to point to the right image to make a button for, used to point to the right sublist to make a button for
             double numRows; // will hold value for the maximum number of rows in the section.
             string[] folders; // holds the files paths of all the folders in the directory, currently Debug folder in project bin.
             int folderCount = System.IO.Directory.GetDirectories(@"Emotes").Length; //gets the number of folders
@@ -71,8 +73,10 @@ namespace DiscordEmoji
                 folders[i] = folders[i].Remove(0, 7);
             }
 
+            sectionIndex = 0;
             for (int i = 0; i < folderCount; i++) // creates a label for each folder name that the buttons are going to go under.
             {
+                masterList.Add(new List<string>()); //adds a new sublist to the masterList list
                 // create label
                 var label = new Label
                 {
@@ -117,6 +121,8 @@ namespace DiscordEmoji
                 yPosBtn = yPos + label.Height;
 
                 imageIndex = 0;
+
+                // create the buttons
                 for (int j = 0; j < numRows; j++) // this for loop loops us through the actions per each row of btns, 
                                                   // ie fully populate a row then move on to the next one, loops the amount of times there will be rows.
                 {
@@ -124,15 +130,18 @@ namespace DiscordEmoji
                     {
                         for (int k = 0; k < maxRowBtn && k < imageCount; k++)
                         {
+                            masterList[i].Add(imagePaths[imageIndex]);
+
                             var button = new Button { };
                             button.Text = imageNames[imageIndex];
                             button.Height = btnHeight;
                             button.Width = btnWidth;
                             button.Location = new Point(xPosBtn, yPosBtn);
 
-                            int paramIndex = imageIndex; // Put value of imageIndex into paramIndex because imageIndex will most likely change value
+                            int paramSectionIndex = sectionIndex; // see below comment, reason is the same
+                            int paramImageIndex = imageIndex; // Put value of imageIndex into paramImageIndex because imageIndex will most likely change value
                                                          // and we want to use the value of imageIndex at the moment of this button creation.
-                            button.Click += (s, e) => { CopyImgToClipboard(imagePaths[paramIndex]); }; // Using lambda noation, we create an anonymous event
+                            button.Click += (s, e) => { CopyImgToClipboard(masterList[paramSectionIndex][paramImageIndex]); }; // Using lambda noation, we create an anonymous event
                                                                                                        // handler that runs CopyImgToClipboard with the file path
                                                                                                        // for the correct image as the parameter
 
@@ -147,21 +156,22 @@ namespace DiscordEmoji
                         double stopper = imageCount - imageIndex; //this is how the for loop for the final row knows when to stop.
                         for (int k = 0; k < stopper; k++)
                         {
+                            masterList[i].Add(imagePaths[imageIndex]);
+
                             var button = new Button { };
                             button.Text = imageNames[imageIndex];
                             button.Height = btnHeight;
                             button.Width = btnWidth;
                             button.Location = new Point(xPosBtn, yPosBtn);
 
-                            int paramIndex = imageIndex; // Put value of imageIndex into paramIndex because imageIndex will most likely change value
-                                                         // and we want to use the value of imageIndex at the moment of this button's creation, but later.
-                            button.Click += (s, e) => {
-                                Console.WriteLine("HERE!!! Index is: " + paramIndex + ", imagePaths length is: " + imagePaths.Length);
-                                CopyImgToClipboard(imagePaths[paramIndex]); }; // Using lambda notation, we create an anonymous event
-                                                                               // handler that runs CopyImgToClipboard with the file path
-                                                                               // for the correct image as the parameter  
+                            int paramSectionIndex = sectionIndex; // see below comment, reason is the same
+                            int paramImageIndex = imageIndex; // Put value of imageIndex into paramImageIndex because imageIndex will most likely change value
+                                                              // and we want to use the value of imageIndex at the moment of this button creation.
+                            button.Click += (s, e) => { CopyImgToClipboard(masterList[paramSectionIndex][paramImageIndex]); }; // Using lambda noation, we create an anonymous event
+                                                                                                                               // handler that runs CopyImgToClipboard with the file path
+                                                                                                                               // for the correct image as the parameter
 
-                            Controls.Add(button);
+                            Controls.Add(button); //adds the button
 
                             xPosBtn = xPosBtn + btnWidth + 6; //increases the xpostion for the next btn by the width of a button + margin (6 = margin)
                             imageIndex++;
@@ -174,6 +184,7 @@ namespace DiscordEmoji
                 yPos = yPos + sectionHeight + label.Height;
 
                 Console.WriteLine("--------HERE-------- imagePaths.length: " + imagePaths.Length); // DEBUG
+                sectionIndex++; // Increases the sectionIndex so it'll point to the next section in masterList when making the buttons for said section in the next loop
             }
         }
     }
